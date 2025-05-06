@@ -6,6 +6,7 @@
     "build": "npm install && npm run lint && webpack --config webpack.config.js",
     "start": "node node_modules/http-server/bin/http-server -p 8765 -c-1",
     "start-sandbox": "npx tabextsandbox --config sandbox-config.json",
+    "start-dev": "npx http-server . -p 8765 --cors -c-1",
     "lint": "npm run jslint && npm run tslint",
     "jslint": "semistandard ./Samples/*/*/*.js",
     "tslint": "tslint --config ./tslint.json ./Samples-Typescript/*/*/*.ts*",

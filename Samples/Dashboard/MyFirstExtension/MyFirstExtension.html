@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My First Extension</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .message {
+            margin: 20px 0;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            background-color: #f8f8f8;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>My First Tableau Extension</h2>
+        <div class="message" id="message">Welcome to your first extension!</div>
+        <button id="refreshButton">Refresh Dashboard</button>
+        <button id="getDataButton">Get Worksheet Data</button>
+    </div>
+
+    <!-- Include the Tableau Extensions API library -->
+    <script src="../../../../lib/tableau.extensions.1.13.0.js"></script>
+    <script src="MyFirstExtension.js"></script>
+</body>
+</html> 
