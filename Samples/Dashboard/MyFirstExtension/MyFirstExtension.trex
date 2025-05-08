@@ -7,7 +7,7 @@
         <author name="Your Name" email="your.email@example.com" organization="Your Organization" website="https://www.example.com"/>
         <min-api-version>1.0</min-api-version>
         <source-location>
-            <url>https://139.5.48.228:8765/Samples/Dashboard/MyFirstExtension/MyFirstExtension.html</url>
+            <url>https://shahana.website/Samples/Dashboard/MyFirstExtension/MyFirstExtension.html</url>
         </source-location>
         <icon></icon>
         <permissions>
