@@ -1,6 +1,12 @@
 console.log('JS loaded');
-// Initialize the extension
-tableau.extensions.initializeAsync().then(() => {
+// Initialize the extension with context menu configuration
+tableau.extensions.initializeAsync({
+    configure: {
+        contextMenu: {
+            items: []
+        }
+    }
+}).then(() => {
     // Get the dashboard object
     const dashboard = tableau.extensions.dashboardContent.dashboard;
     
